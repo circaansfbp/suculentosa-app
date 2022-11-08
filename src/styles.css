@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*  --- 01 Font sizes (px):
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+    
+    --- 02 WHITESPACE
+    Spacing system (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    --- 03 COLORS
+    Greys
+    #18181b
+    #343a40
+    #e0e2e1
+    
+    */
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.header-primary {
+  font-family: "Satisfy", cursive;
+  font-size: 11rem;
+  color: #18181b;
+  line-height: 1.05;
+}
+
+.header-secondary {
+  font-family: "Courgette", cursive;
+  font-size: 3.6rem;
+  color: #343a40;
+  line-height: 1;
+}
+
+.button:link,
+.button:visited {
+    display: inline-block;
+    max-width: max-content;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: #087f5b;
+    color: #fff;
+    border-radius: 9px;
+}
