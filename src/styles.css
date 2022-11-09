@@ -12,6 +12,11 @@
     #18181b
     #343a40
     #e0e2e1
+
+    Accent color
+    #087f5b
+
+    darker shade: #077252
     
     */
 
@@ -45,14 +50,42 @@ body {
   line-height: 1;
 }
 
+.color-primary {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+.color-secondary {
+  background-color: #fff;
+  color: #343a40;
+}
+
 .button:link,
 .button:visited {
-    display: inline-block;
-    max-width: max-content;
-    padding: 1.6rem;
-    font-size: 1.6rem;
-    text-decoration: none;
-    background-color: #087f5b;
-    color: #fff;
-    border-radius: 9px;
+  text-decoration: none;
+  max-width: max-content;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.color-primary:hover,
+.color-primary:active {
+  background-color: #077252;
+}
+
+.color-secondary:hover,
+.color-secondary:active {
+  /* Trick to add border inside of button */
+  background-color: transparent;
+  color: #087f5b;
+  box-shadow: inset 0 0 0 2px #087f5b;
+}
+
+/* add a margin-top */
+.margin-top {
+  margin-top: 2.4rem;
 }
