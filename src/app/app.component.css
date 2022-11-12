@@ -6,7 +6,6 @@
   /* background-color: #e0e2e1; */
   background-image: linear-gradient(to bottom, #e0e2e1, #e7e9e9, #eff0f1, #f7f8f8, #ffffff);
   /* top right bottom left */
-  padding: 3.2rem 6.4rem;
 }
 
 .hero-container {
@@ -14,7 +13,6 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 6.4rem;
   padding-bottom: 6.4rem;
 }
 
@@ -30,8 +28,31 @@
   gap: 1.2rem;
 }
 
-.hero-image {
-  max-width: 100%;
+.hero-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
 }
 
+.cactus-icon {
+  position: relative;
+  top: 17%;
+  left: 17%;
+}
 
+.succulent-icon {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: relative;
+  bottom: 17%;
+  right: 17%;
+}
+
+/* might gave to fix later */
+.section-card-display {
+  display: flex;
+  justify-content: center;
+}
