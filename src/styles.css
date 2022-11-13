@@ -36,6 +36,10 @@ body {
   font-weight: 400;
 }
 
+section {
+  padding: 3.2rem 6.4rem;
+}
+
 .header-primary {
   font-family: "Satisfy", cursive;
   font-size: 11rem;
@@ -48,6 +52,22 @@ body {
   font-size: 3.6rem;
   color: #343a40;
   line-height: 1;
+}
+
+.main-text {
+  font-size: 1.8rem;
+  color: #343a40;
+  text-align: center;
+}
+
+.hover-title-text {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.hover-body-text {
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 .color-primary {
@@ -79,13 +99,19 @@ body {
 
 .color-secondary:hover,
 .color-secondary:active {
-  /* Trick to add border inside of button */
   background-color: transparent;
   color: #087f5b;
+  /* Trick to add border inside of button */
   box-shadow: inset 0 0 0 2px #087f5b;
 }
 
 /* add a margin-top */
 .margin-top {
   margin-top: 2.4rem;
+}
+
+.hero-icon {
+  fill: #077252;
+  width: 100%;
+  height: 100%;
 }

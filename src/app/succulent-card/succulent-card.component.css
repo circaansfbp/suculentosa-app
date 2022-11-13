@@ -1,15 +1,26 @@
 .card {
   width: 35rem;
   height: 45rem;
-  cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.card:hover .img-container,
+.card:hover .name-container {
+  filter: blur(2px);
+}
+
+.card:hover .info-succulent {
+  transform: translateY(-100%);
+  opacity: .9;
 }
 
 .img-container {
   width: 100%;
   height: 35rem;
+  transition: all 0.4s;
 }
 
 .succulent-img {
@@ -19,17 +30,19 @@
 }
 
 .name-container {
+  width: 100%;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   height: 10rem;
   padding: 0.8rem 2.4rem 2.4rem 2.4rem;
+  transition: all 0.4s;
 }
 
 .text-icon {
   grid-row: span 2;
-  fill: #077252;
+  fill: #087f5b;
   width: 75%;
   justify-self: end;
 }
@@ -37,4 +50,62 @@
 .alias-name {
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+.info-succulent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35rem;
+  height: 45rem;
+  background-color: #087f5b;
+  border-radius: 12px;
+  transition: all 0.4s;
+  padding: 1.2rem 2.4rem;
+}
+
+.info-succulent-name {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #fff;
+  padding-bottom: .6rem;
+}
+
+.info-succulent-name p{
+  align-self: center;
+}
+
+.bullet-points {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
+  border-bottom: 2px solid #fff;
+}
+
+.bullet-points p {
+  align-self: center;
+}
+
+.hidden-icon {
+  fill: #fff;
+  width: 50%;
+  height: fit-content;
+  justify-self: center;
+  align-self: center;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: center;
+  padding-top: .6rem;
+}
+
+.hidden-button {
+  background-color: #fff;
+  color: #087f5b;
+  padding: 1rem;
+}
+
+.hidden-button:hover {
+  color: #077252;
 }
